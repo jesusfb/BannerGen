@@ -16,4 +16,5 @@ RUN apt-get install -y apt-utils 2>&1 | grep -v "debconf: delaying package confi
 RUN apt-get install -y  git
 RUN apt-get install -y --no-install-recommends openssh-server openssh-client
 RUN apt-get install -y --no-install-recommends libsm6 libxext6 libxrender-dev
+EXPOSE 80
 ENTRYPOINT ["/bin/sh","-c","sleep infinity"]
